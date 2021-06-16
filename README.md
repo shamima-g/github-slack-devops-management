@@ -8,6 +8,7 @@ The provided sample includes:
 - Authenticating and connecting to the GitHub API via Linx.
 - Get a bot user token in Slack
 - Post messages to Slack using Bot User for GitHub commits for a time period. 
+- Post messages to Slack using Bot User for GitHub issues for a time period.
 
 This sample shows how Linx automatically post messages to Slack.
 Once this GitHub-Slack integration is active, the sample posts messages to Slack Channel. 
