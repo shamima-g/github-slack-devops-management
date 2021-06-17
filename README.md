@@ -128,9 +128,8 @@ When making requests to the GitHub, you must also include the following header:
 Accept: application/x-www-form-urlencoded , application/json
 ```
 ---
-
 ## GitHub Generic samples 
-
+---
 ### GetReposForOwner
 
 Lists repositories for the specified organization.
@@ -165,12 +164,12 @@ Parameters:
 | per_page     |integer query  | Results per page (max 100). Default: 30. |
 
 ---
-## GitHub Utilties samples 
+## GitHub Utilities Samples 
 ---
 ### GetAuthenticatedUserForGitHubTest
 A function to test the authentication is working.  Gets the authenticated user info.  Calls the api https://api.github.com/user
 
-## Slack Utilities samples 
+## Slack Utilities Samples 
 ### AuthorizationTest
 A function to test if you've entered the right token and the right channel.  Calls the api https://slack.com/api/auth.test.
 
@@ -193,7 +192,7 @@ Messages can be sent to Slack with different parameters.  In this section, we bu
    - 'issue' : Linx type
 - Result:
    - `blocks` : String type that stores the JSON blocks
-## Slack Generic samples 
+## Slack Generic Samples 
 ### PostMessageAPI
 Calls the Post message API https://api.slack.com/methods/chat.postMessage
 - Parameters:
