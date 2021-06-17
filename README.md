@@ -201,12 +201,12 @@ Calls the Post message API https://api.slack.com/methods/chat.postMessage
 ---
 ## Running the Sample
 In the **Demo Folder**, 
-- To post commits info to Slack, click on the function named PostCommitsToSlack.
+- To post commits info to Slack, click on the function `PostCommitsToSlack`.
 Enter parameters as follows:
    - `Per_page`: 1
    - `Since`: start date of commits (e.g Yesterday's date or any other date before ‘until date below’: 2021-05-26)
    - `Until`: end date of commits (e.g Today's date : 2021-05-27)
-- To post issues info to Slack, click on the function named PostIssuesToSlack. [GitHub Issues API reference](https://docs.github.com/en/rest/reference/issues) provides a list of paramaters that can be used with the API call.  In our sample, we are using the following hard-coded values:
+- To post issues info to Slack, click on the function `PostIssuesToSlack`. [GitHub Issues API reference](https://docs.github.com/en/rest/reference/issues) provides a list of paramaters that can be used with the API call.  In our sample, we are using the following hard-coded values:
    - filter : all   
 Other parameters are as follows:
   - `Per_page`: 1
