@@ -193,7 +193,7 @@ Messages can be sent to Slack with different parameters.  In this section, we bu
    - 'issue' : Linx type
 - Result:
    - `blocks` : String type that stores the JSON blocks
-## GitHub Generic samples 
+## Slack Generic samples 
 ### PostMessageAPI
 Calls the Post message API https://api.slack.com/methods/chat.postMessage
 - Parameters:
