@@ -24,6 +24,7 @@ Once this GitHub-Slack integration is active, the sample posts messages to Slack
 - [Slack API documentation](https://api.slack.com/apis)
 - [Test apis from browser](https://api.slack.com/methods/chat.postMessage/test)
 - [Slack reference for block kit](https://api.slack.com/reference/block-kit)
+- [Simpler Slack sample get started](https://github.com/linx-software/slack-devops-management)
 ---
 
 ## Dependencies
@@ -89,6 +90,10 @@ Note that access token generated is stored in the file's path defined in `TokenL
        	- channels:history
        	- im:write
        	- chat:write.public
+       	- channels:read  
+       	- groups:read  
+       	- im:read  
+       	- mpim:read  
 6. As the above is done, a message `You can now show tabs on App HomeManage which tabs your user sees in your app’s home. Go to App Home` will appear.
 7. Scroll the page up and go to the section `OAuth Tokens for Your Workspace`
 8. Click on the button **Install to workspace** and click on **Allow**
@@ -192,20 +197,34 @@ Messages can be sent to Slack with different parameters.  In this section, we bu
    - 'issue' : Linx type
 - Result:
    - `blocks` : String type that stores the JSON blocks
+### PostIssuesToSlack 
+A function that gets issues, builds blocks and posts message to slack using the PostMessageAPI above.
+
+### PostCommitsToSlack 
+A function that gets commits, builds blocks and posts message to slack using the PostMessageAPI above.
+
+---
 ## Slack Generic Samples 
 ### PostMessageAPI
 Calls the Post message API https://api.slack.com/methods/chat.postMessage
 - Parameters:
    - `blocks` : String type in JSON format   
+
+### GetChannels  
+Calls the Get API https://api.slack.com/methods/conversations.list.  Lists all channels in a Slack team.
+
+### GetChannelForName
+Gets the Channel's name.
+
 ---
 ## Running the Sample
 In the **Demo Folder**, 
-- To post commits info to Slack, click on the function `PostCommitsToSlack`.
+- To post commits info to Slack, click on the function `PostCommitsToChannelForChannelName`.
 Enter parameters as follows:
    - `Per_page`: 1
    - `Since`: start date of commits (e.g Yesterday's date or any other date before ‘until date below’: 2021-05-26)
    - `Until`: end date of commits (e.g Today's date : 2021-05-27)
-- To post issues info to Slack, click on the function `PostIssuesToSlack`. [GitHub Issues API reference](https://docs.github.com/en/rest/reference/issues) provides a list of paramaters that can be used with the API call.  In our sample, we are using the following hard-coded values:
+- To post issues info to Slack, click on the function `PostIssuesToChannelForChannelName`. [GitHub Issues API reference](https://docs.github.com/en/rest/reference/issues) provides a list of paramaters that can be used with the API call.  In our sample, we are using the following hard-coded values:
    - filter : all   
 Other parameters are as follows:
   - `Per_page`: 1
