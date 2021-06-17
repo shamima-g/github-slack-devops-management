@@ -156,6 +156,13 @@ Parameters:
 
 List issues assigned to the authenticated user across all visible repositories including owned repositories, member repositories, and organization repositories. You can use the filter query parameter to fetch issues that are not necessarily assigned to you.
 
+Parameters:
+
+| Parameter      |    Type            |   					    |
+| -------------  |------------- | ------------------------------------------|
+| since         |string query   | Only show notifications updated after the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.|
+| filter        |string query   | Indicates which sorts of issues to return. Can be one of: - `assigned`: Issues assigned to you - `created`: Issues created by you - `mentioned`: Issues mentioning you - `subscribed`: Issues you're subscribed to updates for - `all`: All issues the authenticated user can see, regardless of participation or creation -`Default`: assigned |
+| per_page     |integer query  | Results per page (max 100). Default: 30. |
 
 ---
 ## GitHub Utilties samples 
