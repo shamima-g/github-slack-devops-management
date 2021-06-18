@@ -167,7 +167,7 @@ Parameters:
 | Parameter      |    Type            |   					    |
 | -------------  |------------- | ------------------------------------------|
 | since         |string query   | Only show notifications updated after the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.|
-| filter        |string query   | Indicates which sorts of issues to return. Can be one of: - `assigned`: Issues assigned to you - `created`: Issues created by you - `mentioned`: Issues mentioning you - `subscribed`: Issues you're subscribed to updates for - `all`: All issues the authenticated user can see, regardless of participation or creation -`Default`: assigned |
+| state        |string query   | Indicates the state of the issues to return. Can be either open, closed, or all.  Default: open|
 | per_page     |integer query  | Results per page (max 100). Default: 30. |
 
 ---
