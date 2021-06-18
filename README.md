@@ -227,10 +227,11 @@ Enter parameters as follows:
    - `Since`: start date of commits (e.g Yesterday's date or any other date before ‘until date below’: 2021-05-26)
    - `Until`: end date of commits (e.g Today's date : 2021-05-27)
 - To post issues info to Slack, click on the function `PostIssuesToChannelForChannelName`. [GitHub Issues API reference](https://docs.github.com/en/rest/reference/issues) provides a list of paramaters that can be used with the API call.  In our sample, we are using the following hard-coded values:
-   - filter : all   
+   - state : all   
 Other parameters are as follows:
   - `Per_page`: 1
   - `Since`: start date of commits (e.g Yesterday's date : 2021-05-26)
+  - `Channel`: Enter channel name to search for from list of channels 
 ---
 If you want to post message to a private channel or and receiving **channel_not_found** message, you should invite the bot to the channel. A bot can't post in a private channel if it's not a member. 
 
