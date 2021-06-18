@@ -158,7 +158,7 @@ Parameters:
 
 ### GetIssues 
 
-List issues assigned to the authenticated user across all visible repositories including owned repositories, member repositories, and organization repositories. You can use the filter query parameter to fetch issues that are not necessarily assigned to you.
+List issues in a repository.
 
 https://docs.github.com/en/rest/reference/issues
 
