@@ -160,7 +160,7 @@ Parameters:
 
 List issues in a repository.
 
-https://docs.github.com/en/rest/reference/issues
+https://docs.github.com/en/rest/reference/issues#list-repository-issues
 
 Parameters:
 
